@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.min.css" rel="stylesheet">
+    <title>Chat</title>
+</head>
+<body>
+<div class="container custom-container">
+    <h1>Chat</h1>
+    <hr>
+    <form id="sendMessageForm">
+        <div class="input-group">
+            <input type="text" class="form-control" id="messageContentField" placeholder="Enter a message ...">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">Send</button>
+            </span>
+        </div>
+    </form>
+    <hr>
+    <ul class="list-group" id="chatMessagesList"></ul>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/socket.io.min.js"></script>
+<script type="text/javascript" src="js/index.min.js"></script>
+</body>
+</html>

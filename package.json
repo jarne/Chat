@@ -1,0 +1,23 @@
+{
+  "name": "Chat",
+  "description": "A simple chat application",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/_mocha"
+  },
+  "dependencies": {
+    "express": "^4.15",
+    "socket.io": "^2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9",
+    "gulp-concat": "^2.6",
+    "gulp-clean-css": "^3.4",
+    "gulp-uglify": "^3.0",
+    "mocha": "^3.4",
+    "chai": "^4.0",
+    "chai-http": "^3.0",
+    "expect.js": "^0.3",
+    "socket.io-client": "^2.0"
+  }
+}
