@@ -2,8 +2,8 @@
   "name": "Chat",
   "description": "A simple chat application",
   "dependencies": {
-    "jquery": "^3.2",
-    "bootstrap": "^3.3",
+    "jquery": "^3.3",
+    "bootstrap": "^4.0",
     "socket.io-client": "^2.0"
   }
 }
