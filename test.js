@@ -28,13 +28,15 @@ describe("load page", function() {
     });
 });
 
-describe("use socket", function(done) {
+describe("use socket", function() {
     var socketFirst;
     var socketSecond;
 
-    beforeEach(function(done) {
-        socketFirst = io.connect("http://127.0.0.1:3000");
-        socketSecond = io.connect("http://127.0.0.1:3000");
+    before(function(done) {
+        var port = (process.env.npm_package_config_port !== undefined) ? process.env.npm_package_config_port : 3000;
+
+        socketFirst = io.connect("http://127.0.0.1:" + port);
+        socketSecond = io.connect("http://127.0.0.1:" + port);
         
         socketSecond.on("connect", function() {
             done();
@@ -58,7 +60,7 @@ describe("use socket", function(done) {
         });
     });
 
-    afterEach(function(done) {
+    after(function(done) {
         if(socketFirst.connected) {
             socketFirst.disconnect();
         }

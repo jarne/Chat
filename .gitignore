@@ -1,3 +1,6 @@
-.idea
-node_modules
-bower_components
+# IDE project folder
+/.idea
+
+# Dependencies
+/node_modules
+/bower_components

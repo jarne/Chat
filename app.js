@@ -27,7 +27,7 @@ io.on("connection", function(socket) {
 
 /* Listen */
 
-http.listen(3000);
+http.listen((process.env.npm_package_config_port !== undefined) ? process.env.npm_package_config_port : 3000);
 
 /* Tests */
 

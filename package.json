@@ -1,9 +1,34 @@
 {
-  "name": "Chat",
+  "name": "chat",
+  "version": "1.0.0",
   "description": "A simple chat application",
+  "keywords": [
+    "chat",
+    "realtime",
+    "node-js",
+    "socket-io",
+    "bootstrap"
+  ],
+  "homepage": "https://github.com/jarne/Chat",
+  "bugs": {
+    "url": "https://github.com/jarne/Chat/issues"
+  },
+  "license": "CC-BY-SA-4.0",
+  "author": {
+    "name": "Jarne",
+    "url": "https://github.com/jarne"
+  },
   "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jarne/Chat.git"
+  },
   "scripts": {
-    "test": "./node_modules/.bin/_mocha"
+    "start": "node app.js",
+    "test": "./node_modules/.bin/_mocha --exit"
+  },
+  "config": {
+    "port": 3000
   },
   "dependencies": {
     "express": "^4.16",
