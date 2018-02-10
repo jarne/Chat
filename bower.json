@@ -16,6 +16,10 @@
     }
   ],
   "homepage": "https://github.com/jarne/Chat",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jarne/Chat.git"
+  },
   "dependencies": {
     "jquery": "^3.3",
     "bootstrap": "^4.0",
