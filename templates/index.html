@@ -12,8 +12,12 @@
     <h1>Chat</h1>
     <hr>
     <form id="sendMessageForm">
-        <p><input type="text" class="form-control" id="messageContentField" placeholder="Enter a message ..."></p>
-        <p><button type="submit" class="btn btn-primary">Send</button></p>
+        <div class="input-group">
+            <input type="text" class="form-control" id="messageContentField" placeholder="Enter a message ...">
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </div>
     </form>
     <hr>
     <ul class="list-group" id="chatMessagesList"></ul>

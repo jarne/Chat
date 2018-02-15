@@ -21,7 +21,13 @@ app.get("/", function(req, res) {
 
 io.on("connection", function(socket) {
     socket.on("send message", function(content) {
-        io.emit("new message", content);
+        var escapedContent = content
+            .replace("&", "&amp;")
+            .replace("\"", "&quot;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;");
+
+        io.emit("new message", escapedContent);
     });
 });
 
