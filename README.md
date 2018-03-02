@@ -23,11 +23,11 @@
 
 <img src=".github/.media/separator.svg" align="center" style="margin-top: -17.5px">
 
-[• Description](#📙-description)  
-[• Install](#📦-install)  
-[• Usage](#🖱-usage)  
-[• Contribution](#🙋‍-contribution)  
-[• License](#👨‍⚖️-license)
+[• Description](#-description)  
+[• Install](#-install)  
+[• Usage](#-usage)  
+[• Contribution](#‍-contribution)  
+[• License](#-license)
 
 ## 📙 Description
 This is a simple chat application built with [Node.js](https://github.com/nodejs/node), [Socket.IO](https://github.com/socketio/socket.io) and [Bootstrap](https://github.com/twbs/bootstrap). You can send messages into the chat and they're displayed in realtime for the other chatters.
