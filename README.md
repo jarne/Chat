@@ -1,7 +1,7 @@
 <h1 align="center">Chat</h1>
 <p align="center">A simple chat application</p>
 
-<img src=".github/.media/separator.svg" align="center">
+<br>
 
 <p align="center">
     <a href="https://github.com/jarne/Chat/blob/master/package.json">
@@ -21,7 +21,7 @@
     </a>
 </p>
 
-#
+##
 
 [• Description](#-description)  
 [• Install](#-install)  
