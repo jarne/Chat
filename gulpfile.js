@@ -9,37 +9,37 @@ var uglify = require("gulp-uglify");
 
 gulp.task("jquery", function() {
     return gulp.src("bower_components/jquery/dist/jquery.min.js")
-        .pipe(gulp.dest("public/js"))
+        .pipe(gulp.dest("public/js"));
 });
 
 gulp.task("bootstrap-css", function() {
     return gulp.src("bower_components/bootstrap/dist/css/bootstrap.min.css")
-        .pipe(gulp.dest("public/css"))
+        .pipe(gulp.dest("public/css"));
 });
 
 gulp.task("bootstrap-js", function() {
     return gulp.src("bower_components/bootstrap/dist/js/bootstrap.min.js")
-        .pipe(gulp.dest("public/js"))
+        .pipe(gulp.dest("public/js"));
 });
 
 gulp.task("socket.io-js", function() {
     return gulp.src("bower_components/socket.io-client/dist/socket.io.js")
         .pipe(concat("socket.io.min.js"))
-        .pipe(gulp.dest("public/js"))
+        .pipe(gulp.dest("public/js"));
 });
 
 gulp.task("index-css", function() {
     return gulp.src("assets/css/index.css")
         .pipe(concat("index.min.css"))
         .pipe(cleanCss())
-        .pipe(gulp.dest("public/css"))
+        .pipe(gulp.dest("public/css"));
 });
 
 gulp.task("index-js", function() {
     return gulp.src("assets/js/index.js")
         .pipe(concat("index.min.js"))
         .pipe(uglify())
-        .pipe(gulp.dest("public/js"))
+        .pipe(gulp.dest("public/js"));
 });
 
 gulp.task("watch", function() {

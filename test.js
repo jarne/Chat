@@ -37,12 +37,12 @@ describe("use socket", function() {
 
         socketFirst = io.connect("http://127.0.0.1:" + port);
         socketSecond = io.connect("http://127.0.0.1:" + port);
-        
+
         socketSecond.on("connect", function() {
             done();
         });
     });
-    
+
     it("it should establish a connection with the socket server", function(done) {
         expect(socketFirst.connected).to.equal(true);
         expect(socketSecond.connected).to.equal(true);

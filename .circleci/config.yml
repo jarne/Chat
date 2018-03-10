@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:9.6-browsers
+      - image: circleci/node:9.7-browsers
     steps:
       # Checkout branch
       - checkout
