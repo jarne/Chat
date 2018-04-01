@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/circleci/project/github/jarne/Chat.svg" alt="CircleCI">
     </a>
     <a href="https://github.com/jarne/Chat/blob/master/LICENSE">
-        <img src="https://img.shields.io/badge/license-CC--BY--SA--4.0-orange.svg" alt="License">
+        <img src="https://img.shields.io/github/license/jarne/Chat.svg" alt="License">
     </a>
     <a href="https://gitter.im/jarne/Chat">
         <img src="https://img.shields.io/gitter/room/jarne/Chat.svg" alt="Gitter">
