@@ -1,11 +1,11 @@
 /**
- * Created by jarne on 30.05.17.
+ * Chat | main app file
  */
 
-var express = require("express");
-var app = require("express")();
-var http = require("http").Server(app);
-var io = require("socket.io")(http);
+const express = require("express");
+const app = require("express")();
+const http = require("http").Server(app);
+const io = require("socket.io")(http);
 
 /* Initialization */
 
@@ -21,7 +21,7 @@ app.get("/", function(req, res) {
 
 io.on("connection", function(socket) {
     socket.on("send message", function(content) {
-        var escapedContent = content
+        const escapedContent = content
             .replace("&", "&amp;")
             .replace("\"", "&quot;")
             .replace("<", "&lt;")

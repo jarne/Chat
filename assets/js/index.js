@@ -1,12 +1,12 @@
 /**
- * Created by jarne on 30.05.17.
+ * Chat | client script
  */
 
-$(document).ready(function() {
-    var socket = new io();
+$(document).ready(() => {
+    const socket = new io();
 
-    $("#sendMessageForm").submit(function(e) {
-        var messageContentField = $("#messageContentField");
+    $("#sendMessageForm").submit((e) => {
+        const messageContentField = $("#messageContentField");
 
         if(messageContentField.val() !== "") {
             socket.emit("send message", messageContentField.val());
@@ -16,7 +16,7 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-    socket.on("new message", function(content) {
+    socket.on("new message", (content) => {
         $("#chatMessagesList").append("<li class=\"list-group-item\">" + content + "</li>");
     });
 });

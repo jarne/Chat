@@ -1,13 +1,13 @@
 /**
- * Created by jarne on 30.05.17.
+ * Chat | application tests
  */
 
-var chai = require("chai");
-var chaiHttp = require("chai-http");
-var expect = require("expect.js");
-var io = require("socket.io-client");
+const chai = require("chai");
+const chaiHttp = require("chai-http");
+const expect = require("expect.js");
+const io = require("socket.io-client");
 
-var app = require("./app");
+const app = require("./app");
 
 /* Initialization */
 
@@ -29,11 +29,11 @@ describe("load page", function() {
 });
 
 describe("use socket", function() {
-    var socketFirst;
-    var socketSecond;
+    let socketFirst;
+    let socketSecond;
 
     before(function(done) {
-        var port = (process.env.npm_package_config_port !== undefined) ? process.env.npm_package_config_port : 3000;
+        const port = (process.env.npm_package_config_port !== undefined) ? process.env.npm_package_config_port : 3000;
 
         socketFirst = io.connect("http://127.0.0.1:" + port);
         socketSecond = io.connect("http://127.0.0.1:" + port);

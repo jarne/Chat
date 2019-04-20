@@ -21,8 +21,8 @@
     "url": "https://github.com/jarne/Chat.git"
   },
   "dependencies": {
-    "jquery": "^3.3",
-    "bootstrap": "^4.0",
-    "socket.io-client": "^2.1"
+    "jquery": "^3.4",
+    "bootstrap": "^4.3",
+    "socket.io-client": "^2.2"
   }
 }

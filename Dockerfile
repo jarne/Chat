@@ -1,11 +1,7 @@
 # docker file for Chat (https://github.com/jarne/Chat)
 
 # Start from Node.js base image
-FROM node:9.7
-
-# Install general updates and needed services
-#RUN apt-get update -y && apt-get upgrade -y
-#RUN apt-get install -y git
+FROM node:11.14
 
 # Create SSH directory for root user
 RUN mkdir /root/.ssh

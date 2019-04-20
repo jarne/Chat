@@ -37,7 +37,7 @@ Here's a screenshot of the page:
 <img src=".github/.media/screenshot.png" alt="Screenshot">
 
 ## 📦 Install
-The application is developed and tested with Node.js v9.x. You can checkout this project with the following command:
+The application is developed and tested with Node.js v11.x. You can checkout this project with the following command:
 
 ```
 $ git clone https://github.com/jarne/Chat.git
@@ -59,11 +59,11 @@ $ npm start
 By default, the web server is now running on port 3000, so you can access it by opening `http://localhost:3000` in your web browser.
 
 ## 🙋‍ Contribution
-Contributions are always very welcome! It's completly equally if you're a beginner or a more experienced developer.
+Contributions are always very welcome! It's completely equally if you're a beginner or a more experienced developer.
 
 Please read our **[Contribution Guidelines](CONTRIBUTING.md)** before creating an issue or submitting a pull request.
 
-Thanks for your intrest 🎉👍!
+Thanks for your interest 🎉👍!
 
 ## 👨‍⚖️ License
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
