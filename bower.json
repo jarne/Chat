@@ -1,7 +1,7 @@
 {
   "name": "chat",
   "description": "A simple chat application",
-  "license": "CC-BY-SA-4.0",
+  "license": "MIT",
   "keywords": [
     "chat",
     "realtime",
