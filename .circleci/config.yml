@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:11.14
+      - image: circleci/node:12.6
     steps:
       # Checkout branch
       - checkout

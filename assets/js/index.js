@@ -2,21 +2,26 @@
  * Chat | client script
  */
 
-$(document).ready(() => {
-    const socket = new io();
+const chatMessages = document.getElementById("chatMessagesList");
+const sendForm = document.getElementById("sendMessageForm");
+const messageField = document.getElementById("messageContentField");
 
-    $("#sendMessageForm").submit((e) => {
-        const messageContentField = $("#messageContentField");
+const socket = new io();
 
-        if(messageContentField.val() !== "") {
-            socket.emit("send message", messageContentField.val());
-            messageContentField.val("");
-        }
-
-        e.preventDefault();
-    });
-
-    socket.on("new message", (content) => {
-        $("#chatMessagesList").append("<li class=\"list-group-item\">" + content + "</li>");
-    });
+socket.on("new message", (content) => {
+    chatMessages.innerHTML += "<li class=\"list-group-item\">" + content + "</li>";
 });
+
+sendForm.onsubmit = (e) => {
+    e.preventDefault();
+
+    const msgVal = messageField.value;
+
+    if(msgVal === "") {
+        return;
+    }
+
+    socket.emit("send message", msgVal);
+
+    messageField.value = "";
+};

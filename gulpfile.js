@@ -7,23 +7,13 @@ const concat = require("gulp-concat");
 const cleanCss = require("gulp-clean-css");
 const minify = require("gulp-minify");
 
-gulp.task("jquery", () => {
-    return gulp.src("bower_components/jquery/dist/jquery.min.js")
-        .pipe(gulp.dest("public/js"));
-});
-
 gulp.task("bootstrap-css", () => {
-    return gulp.src("bower_components/bootstrap/dist/css/bootstrap.min.css")
+    return gulp.src("node_modules/bootstrap/dist/css/bootstrap.min.css")
         .pipe(gulp.dest("public/css"));
 });
 
-gulp.task("bootstrap-js", () => {
-    return gulp.src("bower_components/bootstrap/dist/js/bootstrap.min.js")
-        .pipe(gulp.dest("public/js"));
-});
-
 gulp.task("socket.io-js", () => {
-    return gulp.src("bower_components/socket.io-client/dist/socket.io.js")
+    return gulp.src("node_modules/socket.io-client/dist/socket.io.js")
         .pipe(concat("socket.io.min.js"))
         .pipe(gulp.dest("public/js"));
 });
@@ -45,10 +35,7 @@ gulp.task("index-js", () => {
 });
 
 gulp.task("watch", () => {
-    gulp.watch("bower_components/jquery/jquery.min.js", gulp.parallel("jquery"));
-
     gulp.watch("bower_components/bootstrap/dist/css/bootstrap.min.css", gulp.parallel("bootstrap-css"));
-    gulp.watch("bower_components/bootstrap/dist/js/bootstrap.min.js", gulp.parallel("bootstrap-js"));
 
     gulp.watch("bower_components/socket.io-client/dist/socket.io.js", gulp.parallel("socket.io-js"));
 
@@ -56,4 +43,4 @@ gulp.task("watch", () => {
     gulp.watch("assets/js/index.js", gulp.parallel("index-js"));
 });
 
-gulp.task("default", gulp.parallel("jquery", "bootstrap-css", "bootstrap-js", "socket.io-js", "index-css", "index-js"));
+gulp.task("default", gulp.parallel("bootstrap-css", "socket.io-js", "index-css", "index-js"));
