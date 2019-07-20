@@ -40,7 +40,7 @@
     "gulp-concat": "^2.6",
     "gulp-clean-css": "^4.2",
     "gulp-minify": "^3.1",
-    "mocha": "^6.1",
+    "mocha": "^6.2",
     "chai": "^4.2",
     "chai-http": "^4.3",
     "expect.js": "^0.3",
