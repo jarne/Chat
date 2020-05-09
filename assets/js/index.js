@@ -8,11 +8,11 @@ const messageField = document.getElementById("messageContentField");
 
 const socket = new io();
 
-socket.on("new message", (content) => {
+socket.on("new message", content => {
     chatMessages.innerHTML += "<li class=\"list-group-item\">" + content + "</li>";
 });
 
-sendForm.onsubmit = (e) => {
+sendForm.onsubmit = e => {
     e.preventDefault();
 
     const msgVal = messageField.value;

@@ -1,6 +1,6 @@
 {
   "name": "chat",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple chat application",
   "keywords": [
     "chat",
@@ -32,18 +32,18 @@
   },
   "dependencies": {
     "express": "^4.17",
-    "socket.io": "^2.2"
+    "socket.io": "^2.3"
   },
   "devDependencies": {
-    "bootstrap": "^4.3",
+    "bootstrap": "^4.4",
     "gulp": "^4.0",
     "gulp-concat": "^2.6",
-    "gulp-clean-css": "^4.2",
+    "gulp-clean-css": "^4.3",
     "gulp-minify": "^3.1",
-    "mocha": "^6.1",
+    "mocha": "^7.1",
     "chai": "^4.2",
     "chai-http": "^4.3",
     "expect.js": "^0.3",
-    "socket.io-client": "^2.2"
+    "socket.io-client": "^2.3"
   }
 }

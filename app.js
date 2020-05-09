@@ -3,7 +3,7 @@
  */
 
 const express = require("express");
-const app = require("express")();
+const app = express();
 const http = require("http").Server(app);
 const io = require("socket.io")(http);
 
@@ -19,8 +19,8 @@ app.get("/", function(req, res) {
 
 /* Sockets */
 
-io.on("connection", function(socket) {
-    socket.on("send message", function(content) {
+io.on("connection", socket => {
+    socket.on("send message", content => {
         const escapedContent = content
             .replace("&", "&amp;")
             .replace("\"", "&quot;")
@@ -33,7 +33,7 @@ io.on("connection", function(socket) {
 
 /* Listen */
 
-http.listen((process.env.npm_package_config_port !== undefined) ? process.env.npm_package_config_port : 3000);
+http.listen(process.env.npm_package_config_port || 3000);
 
 /* Tests */
 

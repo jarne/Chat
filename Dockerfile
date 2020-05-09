@@ -1,7 +1,7 @@
 # docker file for Chat (https://github.com/jarne/Chat)
 
 # Start from Node.js base image
-FROM node:12.6
+FROM node:12.16
 
 # Create SSH directory for root user
 RUN mkdir /root/.ssh
