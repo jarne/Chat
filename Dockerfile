@@ -1,7 +1,7 @@
-# docker file for Chat (https://github.com/jarne/Chat)
+# Docker file for Chat (https://github.com/jarne/Chat)
 
 # Start from Node.js base image
-FROM node:12.16
+FROM node:14.15
 
 # Create SSH directory for root user
 RUN mkdir /root/.ssh
@@ -12,8 +12,14 @@ RUN ssh-keyscan github.com >> /root/.ssh/known_hosts
 # Go into the webserver folder
 WORKDIR /var/www
 
-# Clone the repository and move the files to the right place
+# Clone the repository
 RUN git clone https://github.com/jarne/Chat.git
+
+# Change permissions of app folder to application user
+RUN chown -R node:node /var/www/Chat
+
+# Switch to non-root user
+USER node
 
 # Go into the application folder
 WORKDIR /var/www/Chat
