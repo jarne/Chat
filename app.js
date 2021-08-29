@@ -6,6 +6,7 @@ const express = require("express");
 const app = express();
 const http = require("http").Server(app);
 const io = require("socket.io")(http);
+const escape = require("escape-html");
 
 /* Initialization */
 
@@ -21,11 +22,7 @@ app.get("/", function(req, res) {
 
 io.on("connection", socket => {
     socket.on("send message", content => {
-        const escapedContent = content
-            .replace("&", "&amp;")
-            .replace("\"", "&quot;")
-            .replace("<", "&lt;")
-            .replace(">", "&gt;");
+        const escapedContent = escape(content);
 
         io.emit("new message", escapedContent);
     });

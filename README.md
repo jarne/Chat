@@ -8,16 +8,13 @@
         <img src="https://img.shields.io/github/package-json/v/jarne/Chat.svg" alt="Package version">
     </a>
     <a href="https://nodejs.org">
-        <img src="https://img.shields.io/badge/node-%3E%3D%2010.0.0-yellow.svg" alt="Node.js version">
+        <img src="https://img.shields.io/badge/node-%3E%3D%20v12-yellow.svg" alt="Node.js version">
     </a>
     <a href="https://circleci.com/gh/jarne/Chat">
     <img src="https://img.shields.io/circleci/project/github/jarne/Chat.svg" alt="CircleCI">
     </a>
     <a href="https://github.com/jarne/Chat/blob/master/LICENSE">
         <img src="https://img.shields.io/github/license/jarne/Chat.svg" alt="License">
-    </a>
-    <a href="https://gitter.im/jarne/Chat">
-        <img src="https://img.shields.io/gitter/room/jarne/Chat.svg" alt="Gitter">
     </a>
 </p>
 
@@ -37,7 +34,7 @@ Here's a screenshot of the page:
 <img src=".github/.media/screenshot.png" alt="Screenshot">
 
 ## 📦 Install
-The application is developed and tested with Node.js v12.x. You can checkout this project with the following command:
+The application is developed and tested with Node.js v14.x. You can checkout this project with the following command:
 
 ```
 $ git clone https://github.com/jarne/Chat.git

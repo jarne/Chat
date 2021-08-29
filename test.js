@@ -54,7 +54,7 @@ describe("use socket", () => {
         socketFirst.emit("send message", "Hello, that's a test!");
 
         socketSecond.on("new message", content => {
-            expect(content).to.equal("Hello, that's a test!");
+            expect(content).to.equal("Hello, that&#39;s a test!");
 
             done();
         });
