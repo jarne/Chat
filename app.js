@@ -14,14 +14,14 @@ app.use(express.static("public"));
 
 /* Routes */
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
     res.sendFile(__dirname + "/templates/index.html");
 });
 
 /* Sockets */
 
-io.on("connection", socket => {
-    socket.on("send message", content => {
+io.on("connection", (socket) => {
+    socket.on("send message", (content) => {
         const escapedContent = escape(content);
 
         io.emit("new message", escapedContent);

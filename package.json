@@ -1,50 +1,52 @@
 {
-  "name": "chat",
-  "version": "1.0.5",
-  "description": "A simple chat application",
-  "keywords": [
-    "chat",
-    "realtime",
-    "node-js",
-    "socket-io",
-    "bootstrap"
-  ],
-  "homepage": "https://github.com/jarne/Chat",
-  "bugs": {
-    "url": "https://github.com/jarne/Chat/issues"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Jarne",
-    "url": "https://github.com/jarne"
-  },
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jarne/Chat.git"
-  },
-  "scripts": {
-    "start": "node app.js",
-    "test": "./node_modules/.bin/_mocha --exit"
-  },
-  "config": {
-    "port": 3000
-  },
-  "dependencies": {
-    "escape-html": "^1.0",
-    "express": "^4.17",
-    "socket.io": "^4.1"
-  },
-  "devDependencies": {
-    "bootstrap": "^5.1",
-    "chai": "^4.3",
-    "chai-http": "^4.3",
-    "expect.js": "^0.3",
-    "gulp": "^4.0",
-    "gulp-clean-css": "^4.3",
-    "gulp-concat": "^2.6",
-    "gulp-minify": "^3.1",
-    "mocha": "^9.1",
-    "socket.io-client": "^4.1"
-  }
+    "name": "chat",
+    "version": "1.0.5",
+    "description": "A simple chat application",
+    "keywords": [
+        "chat",
+        "realtime",
+        "node-js",
+        "socket-io",
+        "bootstrap"
+    ],
+    "homepage": "https://github.com/jarne/Chat",
+    "bugs": {
+        "url": "https://github.com/jarne/Chat/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Jarne",
+        "url": "https://github.com/jarne"
+    },
+    "main": "app.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jarne/Chat.git"
+    },
+    "scripts": {
+        "start": "node app.js",
+        "test": "./node_modules/.bin/_mocha --exit",
+        "format": "./node_modules/.bin/prettier --write \"**/*.{js,jsx,ts,tsx,json}\""
+    },
+    "config": {
+        "port": 3000
+    },
+    "dependencies": {
+        "escape-html": "^1.0",
+        "express": "^4.17",
+        "socket.io": "^4.1"
+    },
+    "devDependencies": {
+        "bootstrap": "^5.1",
+        "chai": "^4.3",
+        "chai-http": "^4.3",
+        "expect.js": "^0.3",
+        "gulp": "^4.0",
+        "gulp-clean-css": "^4.3",
+        "gulp-concat": "^2.6",
+        "gulp-minify": "^3.1",
+        "mocha": "^9.1",
+        "prettier": "^2.3",
+        "socket.io-client": "^4.1"
+    }
 }

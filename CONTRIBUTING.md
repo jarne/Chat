@@ -10,24 +10,4 @@ If you found a bug or have an idea how to improve or add a new feature, you're w
 Feel free to [open a pull request](https://github.com/jarne/Chat/compare) if you fixed a bug, added or improved a feature.
 
 ## 🎨 Code Style
-This project is using a custom code style. Please see existing code files for more information.
-
-Summary of the most important guidelines:
-
-- Files must always end with an empty line
-
-- Brackets are always written in the same line and with a space
-```
-function testThis() {
-    return "hello!";
-}
-```
-
-- There must be no space in front of commands like if and while
-```
-while(i < 5) {
-    if(e === 3) {
-        return true;
-    }
-}
-```
+Please see the [Prettier config file](https://github.com/jarne/Chat/blob/master/.prettierrc.json).
