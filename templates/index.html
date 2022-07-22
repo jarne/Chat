@@ -1,26 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.min.css">
-    <title>Chat</title>
-</head>
-<body>
-<div class="container custom-container">
-    <h1>Chat</h1>
-    <hr>
-    <form id="sendMessageForm">
-        <div class="input-group">
-            <input type="text" class="form-control" id="messageContentField" placeholder="Enter a message ...">
-            <button type="submit" class="btn btn-primary">Send</button>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/index.min.css" />
+        <title>Chat</title>
+    </head>
+    <body>
+        <div class="container custom-container">
+            <h1>Chat</h1>
+            <hr />
+            <form id="sendMessageForm">
+                <div class="input-group">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="messageContentField"
+                        placeholder="Enter a message ..."
+                    />
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </form>
+            <hr />
+            <ul class="list-group" id="chatMessagesList"></ul>
         </div>
-    </form>
-    <hr>
-    <ul class="list-group" id="chatMessagesList"></ul>
-</div>
-<script src="js/socket.io.min.js"></script>
-<script src="js/index.min.js"></script>
-</body>
+        <script src="js/socket.io.min.js"></script>
+        <script src="js/index.min.js"></script>
+    </body>
 </html>

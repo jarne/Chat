@@ -10,10 +10,10 @@
 
 ### 🌱 Environment
 
-OS: [ Your OS ]  
+OS: [ Your OS ]
 
 Version of Node.js: [ The version of Node.js you used ]  
-Version of this application: [ The version of this application you used ]  
+Version of this application: [ The version of this application you used ]
 
 ### ℹ️ Additional information
 
