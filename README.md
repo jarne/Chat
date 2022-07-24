@@ -8,7 +8,7 @@
         <img src="https://img.shields.io/github/package-json/v/jarne/Chat.svg" alt="Package version">
     </a>
     <a href="https://nodejs.org">
-        <img src="https://img.shields.io/badge/node-%3E%3D%20v12-yellow.svg" alt="Node.js version">
+        <img src="https://img.shields.io/badge/node-%3E%3D%20v16-yellow.svg" alt="Node.js version">
     </a>
     <a href="https://circleci.com/gh/jarne/Chat">
     <img src="https://img.shields.io/circleci/project/github/jarne/Chat.svg" alt="CircleCI">
@@ -36,7 +36,7 @@ Here's a screenshot of the page:
 
 ## 📦 Install
 
-The application is developed and tested with Node.js v14.x. You can checkout this project with the following command:
+The application is developed and tested with Node.js v16 (LTS). You can checkout this project with the following command:
 
 ```
 $ git clone https://github.com/jarne/Chat.git
@@ -60,7 +60,7 @@ By default, the web server is now running on port 3000, so you can access it by 
 
 ## 🙋‍ Contribution
 
-Contributions are always very welcome! It's completely equally if you're a beginner or a more experienced developer.
+Contributions are always very welcome! It's completely equal if you're a beginner or a more experienced developer.
 
 Please read our **[Contribution Guidelines](CONTRIBUTING.md)** before creating an issue or submitting a pull request.
 
