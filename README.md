@@ -20,11 +20,7 @@
 
 ##
 
-[• Description](#-description)  
-[• Install](#-install)  
-[• Usage](#-usage)  
-[• Contribution](#-contribution)  
-[• License](#%EF%B8%8F-license)
+[Description](#-description) | [Install](#-install) | [Usage](#-usage) | [Contribution](#-contribution) | [License](#%EF%B8%8F-license)
 
 ## 📙 Description
 
