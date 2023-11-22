@@ -3,7 +3,7 @@ version: 2
 jobs:
     build:
         docker:
-            - image: cimg/node:16.16
+            - image: cimg/node:20.10
         steps:
             # Checkout branch
             - checkout
@@ -11,7 +11,7 @@ jobs:
             # Install NPM dependencies
             - restore_cache:
                   key: npm-{{ checksum "package.json" }}
-            - run: npm install
+            - run: npm ci
             - save_cache:
                   key: npm-{{ checksum "package.json" }}
                   paths:
