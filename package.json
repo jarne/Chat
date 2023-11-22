@@ -34,19 +34,19 @@
     "dependencies": {
         "escape-html": "^1.0",
         "express": "^4.18",
-        "socket.io": "^4.5"
+        "socket.io": "^4.7"
     },
     "devDependencies": {
-        "bootstrap": "^5.2",
+        "bootstrap": "^5.3",
         "chai": "^4.3",
-        "chai-http": "^4.3",
+        "chai-http": "^4.4",
         "expect.js": "^0.3",
         "gulp": "^4.0",
         "gulp-clean-css": "^4.3",
         "gulp-concat": "^2.6",
         "gulp-minify": "^3.1",
-        "mocha": "^10.0",
-        "prettier": "^2.7",
-        "socket.io-client": "^4.5"
+        "mocha": "^10.2",
+        "prettier": "^3.1",
+        "socket.io-client": "^4.7"
     }
 }
